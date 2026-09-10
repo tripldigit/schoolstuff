@@ -41,16 +41,6 @@ time.sleep(1.5)
 n2 = float(input("Please enter a second number. Follow the pre-established format: "))
 time.sleep(1.5)
 
-print("Processing")
-time.sleep(0.35)
-lp: int = 5
-while lp > 0:
-    time.sleep(0.5)
-    print(".")
-    lp -= 1
-print("Done.")
-time.sleep(1.5)
-
 if OP == "+":
     print(f"Addition:\n{n1} + {n2} =", n1 + n2)
 elif OP == "-":
