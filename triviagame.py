@@ -104,7 +104,7 @@ elif q9 != "netherite":
     print("Incorrect.")
 
 q10 = input("\nLastly, who made Minecraft?")
-if q8 == "notch":
+if q10 == "notch":
     correct = correct + 1
     score = score + 2
     print("Correct!")
@@ -115,3 +115,5 @@ elif q10 != "notch":
 
 print("Your score is:", score)
 print("You got", correct, "questions right out of 10")
+
+print("Thank you for participating in this Trivia Game!")
