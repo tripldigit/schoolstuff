@@ -6,15 +6,15 @@ Instructor: Burgess
 """
 
 def factorial():
-    numb = int(input("Enter a non-negative, whole number: "))
+    numb = int(input("Enter a non-negative, whole number:\n"))
     answer = 1
     if numb == 0:
         print("0! = 1")
     else:
         for i in range(1, numb + 1):
             answer *= i
-        print(f"{numb}! =", answer)
-
+        print(f"{numb}! =", numb, end="")
+        print("",*range(numb-1, 0, -1), sep=" * ", end=f" = {answer}\n")
 
 def main():
     print("This program computes factorials and displays their intermediate calculations.")
