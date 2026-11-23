@@ -7,11 +7,13 @@ Instructor: Burgess
 
 def n_fibonacci():
     numb = int(input("Enter a non-negative, whole number:\n"))
-    a, b = 0, 1
+    a = [0, 1]
+    q = ""
     for i in range(numb):
-        print(a, " ", sep=",", end="")
-        a, b = b, a + b
-
+        a.append(a[-1] + a[-2])
+    print(*a, sep=", ")
+    a.sort(reverse=True)
+    print(*a, sep=", ")
 
 def main():
     print("This program displays the standard Fibonacci sequence that is n elements long.")
